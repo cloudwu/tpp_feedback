@@ -6,6 +6,12 @@
 已知勘误：
 ========
 
+* 37 页代码 `calculate_length()` 后缺少分号，应该是这样的：
+```java
+	// public
+	void setStart(Point p) { this.start = p; calculate_length(); }
+	void setEnd(Point p) { this.end = p; calculate_length(); }
+```
 * 121/122页 代码中注释排版有问题。应该是这样的：
 ```ruby
 def update_customer(transaction_amount)
