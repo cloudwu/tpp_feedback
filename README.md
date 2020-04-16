@@ -6,12 +6,33 @@
 已知勘误：
 ========
 
-* 37 页代码 `calculate_length()` 后缺少分号，应该是这样的：
+* 37 页代码 `calculate_length` 应统一为 calculateLength , 且 setStart 及 setEnd 函数最后缺少分号，应该是这样的：
 ```java
+class Line {
+	private double length;
+	private Point start;
+	private Point end;
+
+	public Line(Point start, Point end) {
+		this.start = start;
+		this.end = end;
+		calculateLength();
+	}
+
 	// public
-	void setStart(Point p) { this.start = p; calculate_length(); }
-	void setEnd(Point p) { this.end = p; calculate_length(); }
-```
+	void setStart(Point p) { this.start = p; calculateLength(); }
+	void setEnd(Point p) { this.end = p; calculateLength(); }
+
+	Point getStart(void) { return start; }
+	Point getEnd(void) { return end; }
+
+	double getLength() { return length; }
+
+	private void calculateLength() {
+		this.length = start.distanceTo(end);
+	}
+};
+```	
 * 63 页 单独的一个 "/" 请求会交给 Page~~w~~Controller 模块的 `index` 函数处理。
 * 121/122页 代码中注释排版有问题。应该是这样的：
 ```ruby
