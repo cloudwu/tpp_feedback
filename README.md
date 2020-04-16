@@ -12,6 +12,7 @@
 	void setStart(Point p) { this.start = p; calculate_length(); }
 	void setEnd(Point p) { this.end = p; calculate_length(); }
 ```
+* 63 页 单独的一个 "/" 请求会交给 Page~~w~~Controller 模块的 `index` 函数处理。
 * 121/122页 代码中注释排版有问题。应该是这样的：
 ```ruby
 def update_customer(transaction_amount)
