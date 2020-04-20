@@ -44,4 +44,13 @@ def update_customer(transaction_amount)
 	end                                                   # <--
 end
 ```
+* 166 页下方代码，缺少一个 ) 和一个 } 。应该是：
+```java
+void printLocation(Locatable item) {
+	if (item.locationIsValid()) {
+		print(item.getLocation().asString());
+	}
+}
+// ...
+```
 * 302页 答案9 “我们不考虑~~迸~~(进)出存储设备的信息所需的传输时间”
