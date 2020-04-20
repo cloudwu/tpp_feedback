@@ -34,6 +34,7 @@ class Line {
 };
 ```	
 * 63 页 单独的一个 "/" 请求会交给 Page~~w~~Controller 模块的 `index` 函数处理。
+* 81 页中间，命令补全之上的代码应为：  alias rm='rm -iv'
 * 121/122页 代码中注释排版有问题。应该是这样的：
 ```ruby
 def update_customer(transaction_amount)
