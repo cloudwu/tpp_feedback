@@ -6,6 +6,8 @@
 已知勘误：
 ========
 
+* 19 页 就去读一本讲设计和~~构架~~架构的书。
+
 * 37 页代码 `calculate_length` 应统一为 calculateLength , 且 setStart 及 setEnd 函数最后缺少分号，应该是这样的：
 ```java
 class Line {
