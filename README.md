@@ -49,6 +49,7 @@ def update_customer(transaction_amount)
 	end                                                   # <--
 end
 ```
+* 142 页的图中，ch == * 应为 ch == " ，参见：https://github.com/cloudwu/tpp_feedback/issues/14
 * 166 页下方代码，缺少一个 ) 和一个 } 。应该是：
 ```java
 void printLocation(Locatable item) {
